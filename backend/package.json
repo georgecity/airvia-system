@@ -1,0 +1,25 @@
+{
+  "name": "airvia-system",
+  "version": "1.0.0",
+  "description": "airvia system for recording sales and producing reports.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "author": "George Laaz",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.9.5",
+    "bootstrap": "^4.4.1",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.4",
+    "react-router-dom": "^5.1.2",
+    "react-transition-group": "^4.3.0",
+    "reactstrap": "^8.4.1",
+    "uuid": "^7.0.2"
+  }
+}

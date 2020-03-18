@@ -1,0 +1,70 @@
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./components/gui/navbar.component";
+import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+
+import RegisterUser from './components/register-user.component';
+
+import { Provider } from 'react-redux';
+import store from './store';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+class App extends Component {
+
+   
+    render () {
+        return (
+            <Provider store= {store}>
+            <Router>
+            <Route render={({ location, history }) => (
+                <React.Fragment>
+                    <SideNav
+                        onSelect={(selected) => {
+                            const to = '/' + selected;
+                            if (location.pathname !== to) {
+                                history.push(to);
+                            }
+                        }}
+                    >
+                        <SideNav.Toggle />
+                        <SideNav.Nav defaultSelected="home">
+                            <NavItem eventKey="home">
+                                <NavIcon>
+                                    <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+                                </NavIcon>
+                                <NavText>
+                                    Register User
+                                </NavText>
+                            </NavItem>
+                            <NavItem eventKey="devices">
+                                <NavIcon>
+                                    <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} />
+                                </NavIcon>
+                                <NavText>
+                                    Devices
+                                </NavText>
+                            </NavItem>
+                        </SideNav.Nav>
+                    </SideNav>
+                    <main>
+                        {//<Route path="/" exact component={props => <RootComponent />} />
+                        //<Route path="/home" component={props => <Home />} />
+                        //<Route path="/devices" component={props => <Devices />} />
+                        <Route path="/users/register" component={RegisterUser} />
+                      }
+                    </main>
+                </React.Fragment>
+            )}
+            />
+        </Router>
+        </Provider>
+          );
+    }
+}
+  
+
+
+export default App;

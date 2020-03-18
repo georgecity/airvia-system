@@ -1,0 +1,48 @@
+export const GET_BLANKS= 'GET_BLANKS';
+export const ADD_BLANK = 'ADD_BLANK';
+export const DELETE_BLANK = 'DELETE_BLANK';
+export const BLANKS_LOADING = 'BLANKS_LOADING';
+export const UPDATE_BLANK = 'UPDATE_BLANK';
+//
+export const GET_COMISSIONS = 'GET_COMISSIONS';
+export const ADD_COMISSION = 'ADD_COMISSION';
+export const DELETE_COMISSION = 'DELETE_COMISSION';
+export const COMISSIONS_LOADING = 'COMISSIONS_LOADING';
+//
+export const GET_CUSTOMERS = 'GET_CUSTOMERS';
+export const ADD_CUSTOMER = 'ADD_CUSTOMER';
+export const DELETE_CUSTOMER = 'DELETE_CUSTOMER';
+export const CUSTOMERS_LOADING = 'CUSTOMERS_LOADING';
+export const UPDATE_CUSTOMER = 'UPDATE_CUSTOMER';
+
+//
+export const GET_CURRENCIES = 'GET_CURRENCIES';
+export const ADD_CURRENCY = 'ADD_CURRENCY';
+export const DELETE_CURRENCY = 'DELETE_CURRENCY';
+export const CURRENCIES_LOADING = 'CURRENCIES_LOADING';
+//
+export const GET_DISCOUNTS = 'GET_DISCOUNTS';
+export const ADD_DISCOUNT = 'ADD_DISCOUNT';
+export const DELETE_DISCOUNT = 'DELETE_DISCOUNT';
+export const DISCOUNTS_LOADING = 'DISCOUNTS_LOADING';
+export const UPDATE_DISCOUNT = 'UPDATE_DISCOUNT';
+
+//
+export const GET_PAYMENTS = 'GET_PAYMENTS';
+export const ADD_PAYMENT = 'ADD_PAYMENT';
+export const DELETE_PAYMENT = 'DELETE_PAYMENT';
+export const PAYMENTS_LOADING = 'PAYMENTS_LOADING';
+//
+export const GET_SALES = 'GET_SALES';
+export const ADD_SALE = 'ADD_SALE';
+export const DELETE_SALE = 'DELETE_SALE';
+export const SALES_LOADING = 'SALES_LOADING';
+export const UPDATE_SALE = 'UPDATE_SALE';
+
+//
+export const GET_USERS = 'GET_USERS';
+export const ADD_USER = 'ADD_USER';
+export const DELETE_USER = 'DELETE_USER';
+export const USERS_LOADING = 'USERS_LOADING';
+export const UPDATE_USER = 'UPDATE_USER';
+//
